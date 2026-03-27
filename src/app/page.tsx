@@ -20,11 +20,11 @@ export default function Home() {
     [0, 0, 1, 1]
   );
 
-  const smoothProgress = useSpring(frameProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+  // const smoothProgress = useSpring(frameProgress, {
+  //   stiffness: 100,
+  //   damping: 30,
+  //   restDelta: 0.001
+  // });
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -62,14 +62,14 @@ export default function Home() {
 }
 
 // Fade in when scrolled into view
-const fadeVariant: any = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.8, ease: [0, 0, 0.2, 1] } 
-  }
-};
+// const fadeVariant: any = {
+//   hidden: { opacity: 0, y: 50 },
+//   visible: { 
+//     opacity: 1, 
+//     y: 0, 
+//     transition: { duration: 0.8, ease: [0, 0, 0.2, 1] } 
+//   }
+// };
 
 function HeroSection() {
   return (
@@ -77,7 +77,7 @@ function HeroSection() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.3 }}
-      variants={fadeVariant}
+      // variants={fadeVariant}
       className="h-[120vh] flex flex-col items-end justify-center px-6 md:pr-[2%] text-right w-full md:w-[45%] ml-auto"
     >
       <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-4 text-[#1A1510] drop-shadow-md">
@@ -99,7 +99,7 @@ function EngineeringSection() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.4 }}
-      variants={fadeVariant}
+      // variants={fadeVariant}
       className="h-[120vh] flex flex-col items-start justify-center px-6 md:pl-[2%] w-full md:w-[55%] mr-auto text-left"
     >
       <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-6 text-[#1A1510] drop-shadow-md">
@@ -121,7 +121,7 @@ function NoiseCancellingSection() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.4 }}
-      variants={fadeVariant}
+      // variants={fadeVariant}
       className="h-[120vh] flex flex-col items-end justify-center px-6 md:pr-[2%] text-right w-full md:w-[45%] ml-auto"
     >
       <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-6 text-[#1A1510] drop-shadow-md">
@@ -144,7 +144,7 @@ function SoundSection() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.4 }}
-      variants={fadeVariant}
+      // variants={fadeVariant}
       className="h-[120vh] flex flex-col items-start justify-center px-6 md:pl-[2%] text-left w-full md:w-[45%] mr-auto"
     >
       <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-6 text-[#1A1510] drop-shadow-md">
@@ -163,7 +163,7 @@ function ReassemblySection() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.3 }}
-      variants={fadeVariant}
+      // variants={fadeVariant}
       className="h-[120vh] flex flex-col items-end justify-center px-6 md:pr-[2%] text-right w-full md:w-[50%] ml-auto"
     >
       <h2 className="text-6xl md:text-7xl font-black tracking-tighter mb-4 text-[#1A1510] drop-shadow-md">
