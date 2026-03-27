@@ -103,7 +103,7 @@ function EngineeringSection() {
       className="h-[120vh] flex flex-col items-start justify-center px-6 md:pl-[2%] w-full md:w-[55%] mr-auto text-left"
     >
       <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-6 text-[#1A1510] drop-shadow-md">
-        Precision engineered <br />for silence.
+        Precisely engineered <br />for silence.
       </h2>
       <div className="space-y-4 max-w-sm text-[#3D3020] text-xl font-bold leading-relaxed drop-shadow-sm">
         <p>Custom drivers, sealed acoustic chambers, and optimized airflow deliver studio-grade clarity.</p>
